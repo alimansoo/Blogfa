@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بلاگفا</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./plugins/iziToast-master/dist/css/iziToast.min.css">
+</head>
+<body>
+    <main id="mainContent">
+        <div class="cardContainer" id="cardContainer">
+            <div class="card">
+                <div class="card_title">
+                    <div class="loading"></div>
+                </div>
+                <div class="card_body">
+                    <div class="loading"></div>
+                </div>
+                <div class="card_footer">
+                    <div class="card_footer_author">
+                        <div class="author_avatar">
+                            <div class="loading"></div>
+                        </div>
+                        <div class="author_name">
+                            <div class="loading"></div>
+                        </div>
+                    </div>
+                    <div class="card_footer_action">
+                        <div class="loading"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_title">
+                    چهارشنبه سوری مبارک
+                </div>
+                <div class="card_body">
+                    شاد باش لبخند بزن فکر کن آخرین روز زندگیت هست تمام غم و غصه هات و بریز توی آتیش و سال جدید رو بهتر اغاز کن. چهارشنبه سوری مبارک
+                </div>
+                <div class="card_footer">
+                    <div class="card_footer_author">
+                        <div class="author_avatar">
+                            <img src="./assets/images/avatar.png" class="avatar" alt="">
+                        </div>
+                        <div class="author_name">
+                            فاطمه محمدی
+                        </div>
+                    </div>
+                    <div class="card_footer_action">
+                        <a href="#" class="btn btn-primary btn-icon-left">
+                            مشاهده
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Container">
+            <div class="form-container">
+                <form action="" class="form" method="post">
+                    <div class="form-group">
+                        <label for="" class="form-group_label">عنوان مقاله:</label>
+                        <input type="text" class="form-group_controller">
+                    </div>
+                    <div class="form-group" class="form-group_controller">
+                        <label for="" class="form-group_label">نویسنده مقاله:</label>
+                        <select name="" id="" class="form-group_controller">
+                            <option value="">فاطمه احمدی</option>
+                            <option value="">فاطمه منصوری</option>
+                            <option value="">فاطمه حسینی</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-group_label">متن مقاله:</label>
+                        <textarea name="" class="form-group_area" id="" cols="30" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">ثبت ولاگ جدید</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+        src="https://kit.fontawesome.com/73052ad780.js"
+        crossorigin="anonymous"
+    ></script>
+    <script src="./plugins/iziToast-master/dist/js/iziToast.min.js"></script>
+    <script>
+        setTimeout(()=>{
+            iziToast.success({
+            title: 'OK',
+            message: 'Successfully inserted record!',
+        });
+        },200);
+        
+    </script>
+</body>
+</html>
